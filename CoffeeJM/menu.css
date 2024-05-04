@@ -1,0 +1,148 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Fondo de toda la pantalla*/
+body{
+    margin: 0 100px;
+    background-color: #d3a775;
+}
+/*Primer div*/
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+/*"Menú"*/
+.nav .logo h1{
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #000000;
+}
+/*botón de inicio y de carrito*/
+
+.btn {
+    background-color: #5b3503;
+    padding: 10px 50px; 
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+.content .content-right img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.category{
+    width: 100%;
+    display: flex;
+    /*margin-bottom: 50px;*/
+    justify-content: center;
+}
+
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: 100px;
+}
+
+/*Tipo de bebidas*/
+.category .list-items h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 90px;
+}
+
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+/*bloque 1*/
+.category .card-list .card{
+    width: 160px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #fbbd60;
+    outline: 2px solid #985100;
+}
+
+/*imagen 1*/
+.category .card-list .card img{
+    width: 100px;
+    height: auto;
+    bottom: 180px;
+    left: 30px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 20px 20px hsl(28, 51%, 54%);
+    border-radius: 50%;
+}
+
+.category .card-list .card .Coffee{
+    padding: 40px 0 10px;
+}
+
+.category .card-list .card .Coffee{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/*nombre como expreso*/
+.category .card .desc-coffee{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+/*boton de agregar*/
+.category .card .price .btn-primary{
+    background-color: #c28933;
+    padding: 2px 12px; 
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: #4b3104;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.category .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category .card .price span .price-circle{
+    color: #603800;
+    font-size: 20px;
+    cursor: pointer;
+}
